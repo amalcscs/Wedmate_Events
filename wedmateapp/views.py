@@ -12,10 +12,10 @@ from django.core.files import File
 def base(request):
     return render(request,'base.html')
 
-def wedmate_quatationpdf(request):
+def wedmate_quotationpdf(request):
     
     
-    template_path = 'wedmate_quatation.html'
+    template_path = 'wedmate_quotation.html'
     context = {
     'media_url':settings.MEDIA_URL,
     }
@@ -39,3 +39,5 @@ def wedmate_quatationpdf(request):
     return response
 
 
+def wedmate_quotationadd(request):
+    return render(request,'wedmate_quotation_add.html')

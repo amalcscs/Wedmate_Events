@@ -10,7 +10,8 @@ from wedmateapp import views
 urlpatterns = [
     re_path('admin/', admin.site.urls),
     re_path(r'^$',views.base, name='base'),
-    re_path(r'^wedmate_quatationpdf$',views.wedmate_quatationpdf, name='wedmate_quatationpdf'),
+    re_path(r'^wedmate_quotationpdf$',views.wedmate_quotationpdf, name='wedmate_quotationpdf'),
+    re_path(r'^wedmate_quotationadd$',views.wedmate_quotationadd, name='wedmate_quotationadd'),
     # re_path(r'^books/(?P<id>\d+)/$',views.books, name='books'),  
     
 
